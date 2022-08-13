@@ -2,7 +2,6 @@ function isValidHtml(html) {
 	var tr = [];
 	var isValid = true;
 	var htmlSpecificCharRemove = html.replace(/[^a-zA-Z ]/g, " ").substring(1).split(' ').filter(e => e != '');
-	console.log(htmlSpecificCharRemove);
 	for (let i = 0; i < htmlSpecificCharRemove.length; i++) {
 		const char = htmlSpecificCharRemove[i];
 		if (!tr.includes(char)) {
@@ -15,8 +14,6 @@ function isValidHtml(html) {
 		}
 		
 	}
-	console.log(tr);
-	document.getElementById('result').innerHTML = isValid
 	return isValid
 }
 function isOccuranrePair(data, el) {

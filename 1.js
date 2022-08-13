@@ -7,7 +7,6 @@ function isValidHtml(html) {
 		if (!tr.includes(char)) {
 			tr.push(char);
 		}else{
-			console.log(char);
 			if (htmlSpecificCharRemove[i-1] != char  && !isOccuranrePair(tr, htmlSpecificCharRemove[i-1])) {
 				isValid = false
 			}			
